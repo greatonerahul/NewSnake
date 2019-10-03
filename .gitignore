@@ -1,0 +1,7 @@
+target/*
+/target/
+.idea/*
+/.idea/
+src/test/*
+/src/test/
+Snake.iml
