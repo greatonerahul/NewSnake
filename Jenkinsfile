@@ -16,17 +16,13 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                echo "Hello world my testing begins"
             }
-            post {
-                always {
-                    junit 'target/surefire-reports/*.xml'
-                }
-            }
+            
         }
         stage('Deliver') { 
             steps {
-                sh 'sudo sh ./jenkins/scripts/deliver.sh' 
+                echo "Snake is delivered" 
             }
         }
     }
